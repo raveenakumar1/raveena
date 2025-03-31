@@ -1,0 +1,43 @@
+#loading-screen {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+/* loading image styling */
+.loading-image {
+    width: 100px; 
+    height: auto;
+}
+
+/* loading bar container */
+.loading-bar-cont {
+    width: 50%;
+    max-width: 348px;
+    height: 36px;
+    background: #fff;
+    border-radius: 45px;
+    border: #934488 solid 5px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+/* animated loading bar */
+.loading-bar {
+    width: 0%;
+    height: 100%;
+    background-color: #934488;
+    animation: loading-animation 2s linear forwards;
+}
+
+/* animation keyframes */
+@keyframes loading-animation {
+    0% { width: 0%; }
+    100% { width: 100%; }
+}
