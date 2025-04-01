@@ -114,6 +114,7 @@ nav ul li a:hover {
     transition: 0.3s ease-in-out;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border: #934488 solid 4px;
+    margin-bottom: 20px;
 }
 
 .start:hover {
