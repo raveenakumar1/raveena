@@ -1,0 +1,118 @@
+/* body */
+body {
+    font-family: "Press Start 2P", system-ui;
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0; 
+}
+
+/* navigation bar */
+nav {
+    background-color: #331212;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    box-sizing: border-box;
+    height: 80px;
+    top: 0;
+    right: 0;
+    left: 0; 
+    z-index:1000;
+    border-bottom: #753d6e solid 5px;
+
+}
+
+.logo img {
+    height: 50px;
+    max-height: 80px;
+    width: auto;
+    padding: 10px;
+    transform: scale(0.90);
+    z-index: 1001;
+
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 20px;
+    gap: 20px;
+
+}
+
+nav li {
+
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    background-color: #CE64C0;
+    border-radius: 30px;
+    border: 3px solid #fff;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 14px;
+    padding: 10px 15px;
+    transition: 0.3s;
+
+}
+
+nav ul li a:hover {
+    background-color:#934488;
+    border-radius: 30px;
+    border: 3px solid #fff;
+}
+
+
+/* loading screen styling */
+#loading-screen {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+/* loading image */
+.loading-image {
+    width: 191px;
+    height: 162px; 
+
+}
+
+/* loading bar container */
+.loading-bar-cont {
+    width: 50%;
+    max-width: 348px;
+    height: 36px;
+    background: #fff;
+    border-radius: 45px;
+    border: #934488 solid 5px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+/* animated loading bar */
+.loading-bar {
+    width: 0%;
+    height: 100%;
+    background-color: #934488;
+    animation: loading-animation 2s linear forwards;
+}
+
+/* animation keyframes */
+@keyframes loading-animation {
+    0% { width: 0%; }
+    100% { width: 100%; }
+}
