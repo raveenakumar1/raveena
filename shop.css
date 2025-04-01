@@ -1,12 +1,115 @@
 /* body */
+
 body {
     font-family: "Press Start 2P", system-ui;
     height: 100vh; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0; 
+    display: flex; 
+    margin: 0;
+    padding-top: 80px; 
+    background-color: #ECCAE7;
 }
+
+/* filter menu */
+.filter-menu {
+    width: 270px; 
+    padding: 10px;
+    background-color: #331212;
+    border: 6px solid #1B0A0A;
+    border-radius: 20px;
+    position: fixed;
+    left: 20px;
+    top: 100px;
+    max-height: 80vh;
+    overflow-y: auto; 
+    box-sizing: border-box;
+}
+
+.filter-menu .header {
+    background-color: #fff;
+    color: #1B0A0A;
+    font-weight: bold;
+    height: 40px;
+    width: 205px;
+    align-self: center;
+    text-align: center;
+    border-radius: 30px;
+    border: #1B0A0A 5px solid;
+    margin-bottom: 10px;
+}
+
+/* scrollbar */
+.filter-menu::-webkit-scrollbar {
+    width: 20px; 
+}
+
+/* scrollbar track */
+.filter-menu::-webkit-scrollbar-track {
+    background-color: #ffffff;
+    border-radius: 50px;
+    padding: 3px; 
+    box-sizing: border-box; 
+    margin: 10px;
+}
+
+/* scrollbar thumb */
+.filter-menu::-webkit-scrollbar-thumb {
+    background-color:#934488;
+    border-radius: 10px;
+    width: 14px; 
+    margin: 5px; 
+}
+
+/* filter container */
+.filter-container {
+    background-color: #fff;
+    width: 205px;
+    border-radius: 20px;
+    border: #1B0A0A solid 5px;
+    height: fit-content;
+    font-size: 10px;
+    text-align: left;
+    align-self: center;
+}
+
+/* filter items */
+.filter-item {
+    margin: 20px;
+}
+
+.filter-item summary {
+    font-weight: bold;
+    color: #331212;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.filter-item summary::after {
+    content: '';
+    position: absolute;
+    right: 5px;
+    width: 10px;
+    height: 8px;
+    background-image: url('https://raveenakumar1.github.io/raveena/images/logo.png'); /* Custom icon */
+    background-size: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.filter-item[open] summary::after {
+    transform: rotate(180deg); 
+}
+
+.filter-item label {
+    display: block;
+    font-weight: bold;
+    padding: 5px 0;
+    color:#934488;
+    font-size: 8px;
+}
+
 
 /* navigation bar */
 nav {
@@ -74,14 +177,16 @@ nav ul li a:hover {
 /* loading screen styling */
 #loading-screen {
     position: fixed;
-    width: 100%;
-    height: 100%;
+    top: 0;
+    left: 0;
+    width: 100vw; 
+    height: 100vh; 
     background: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    z-index: 9999;
+    z-index: 99999; 
 }
 
 /* loading image */
@@ -116,3 +221,4 @@ nav ul li a:hover {
     0% { width: 0%; }
     100% { width: 100%; }
 }
+
