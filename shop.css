@@ -9,9 +9,52 @@ body {
     background-color: #ECCAE7;
 }
 
+/* side-bar */
 .side-bar {
     display: flex;
     flex-direction: column;
+    margin: 20px;
+    gap: 20px;
+}
+
+/* feed-me gif */
+.feed-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    justify-content: center; 
+    width: 100%; 
+    margin: auto; 
+    gap: 20px;
+}
+
+.feed-me img {
+    display: block; 
+    border-radius: 14px;
+}
+
+.feed {
+    background-color: #ffffff;
+    color:#1B0A0A; 
+    text-align: center;
+    font-family: "Press Start 2P", sans-serif; /* Matching font */
+    font-size: 14px;
+    border: none;
+    padding: 14px 24px;
+    border-radius: 15px; 
+    cursor: pointer; 
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: #1B0A0A solid 4px;
+    margin-bottom: 20px;
+}
+
+.feed:hover {
+    transform: scale(1.05); 
+}
+
+.feed:active {
+    transform: scale(0.95);
 }
 
 /* filter menu */
@@ -21,7 +64,7 @@ body {
     background-color: #331212;
     border: 6px solid #1B0A0A;
     border-radius: 20px;
-    position: fixed;
+    position: static;
     left: 20px;
     top: 100px;
     max-height: 80vh;
