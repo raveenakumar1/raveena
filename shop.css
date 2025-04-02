@@ -282,7 +282,7 @@ nav ul li a:hover {
     flex-wrap: wrap; 
     justify-content: center; 
     align-items: flex-start; 
-    gap: 20px; 
+    gap: 30px; 
     width: 64%;
     min-height: 80vh;
     background-color: #934488;
@@ -296,12 +296,9 @@ nav ul li a:hover {
 }
 
 .shop-items img {
-    width: 100%; 
-    max-width: 250px; 
-    max-height: 250px;
-    min-width: 250px;
-    max-width: 250px;
-    height: auto; 
+    width: 240px; 
+    height: 200px; 
+    object-fit: cover;
     border-radius: 15px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
     transition: transform 0.3s ease-in-out; 
