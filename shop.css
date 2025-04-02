@@ -1,5 +1,4 @@
 /* body */
-
 body {
     font-family: "Press Start 2P", system-ui;
     height: 100vh; 
@@ -7,6 +6,13 @@ body {
     margin: 0;
     padding-top: 80px; 
     background-color: #ECCAE7;
+}
+
+/* shop-screen */
+#shop-screen {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
 }
 
 /* side-bar */
@@ -37,7 +43,7 @@ body {
     background-color: #ffffff;
     color:#1B0A0A; 
     text-align: center;
-    font-family: "Press Start 2P", sans-serif; /* Matching font */
+    font-family: "Press Start 2P", sans-serif; 
     font-size: 14px;
     border: none;
     padding: 14px 24px;
@@ -141,7 +147,7 @@ body {
     right: 5px;
     width: 10px;
     height: 8px;
-    background-image: url('https://raveenakumar1.github.io/raveena/images/logo.png'); /* Custom icon */
+    background-image: url('https://raveenakumar1.github.io/raveena/images/logo.png'); 
     background-size: cover;
     transition: transform 0.3s ease-in-out;
 }
@@ -270,15 +276,103 @@ nav ul li a:hover {
     100% { width: 100%; }
 }
 
+/* general styling for items */
 .shop-items {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    align-items: flex-start; 
+    gap: 20px; 
+    width: 64%;
+    min-height: 80vh;
+    background-color: #934488;
+    border-radius: 14px;
+    border: #1B0A0A 5px solid;
     padding: 20px;
-    justify-content: center;
-    height: auto; /* Ensure it expands */
-    min-height: 300px; /* Prevent it from disappearing */
-    background-color: #fff; /* Just to see if it's appearing */
-    border: 2px solid red; /* Temporary border to check visibility */
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    overflow-y: auto;
 }
 
+.shop-items img {
+    width: 100%; 
+    max-width: 250px; 
+    height: auto; 
+    border-radius: 15px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s ease-in-out; 
+    margin: auto;
+    border: #1B0A0A 5px solid;
+}
+
+.shop-items img:hover {
+    transform: scale(1.05); 
+}
+
+
+.shop-items p {
+    font-size: 10px;
+    text-align: center;
+}
+
+.shop-items h1 {
+    font-size: 15px;
+    text-align: center;
+}
+
+
+/* general styling for contents in shop-item */
+.shop-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* this CENTERS everything */
+    justify-content: center;
+    text-align: center;
+}
+
+.shop-item button {
+    background-color: #ffffff;
+    color:#693062; 
+    text-align: center;
+    font-family: "Press Start 2P", sans-serif; 
+    font-size: 10px;
+    font-weight: bold;
+    padding: 14px 15px;
+    border-radius: 15px; 
+    cursor: pointer; 
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: #1B0A0A solid 4px;
+}
+
+.shop-item button:hover {
+    transform: scale(1.05); 
+}
+
+.shop-item button:active {
+    transform: scale(0.95);
+}
+
+
+/* scrollbar */
+.shop-items::-webkit-scrollbar {
+    width: 10px; 
+}
+
+/* scrollbar track */
+.shop-items::-webkit-scrollbar-track {
+    background-color:#331212;
+    border-radius: 50px;
+    padding: 3px; 
+    box-sizing: border-box; 
+    margin: 1px;
+}
+
+/* scrollbar thumb */
+.shop-items::-webkit-scrollbar-thumb {
+    background-color:#ffffff;
+    border-radius: 10px;
+    width: 15px; 
+    margin: 5px; 
+}
