@@ -270,3 +270,15 @@ nav ul li a:hover {
     100% { width: 100%; }
 }
 
+.shop-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+    height: auto; /* Ensure it expands */
+    min-height: 300px; /* Prevent it from disappearing */
+    background-color: #fff; /* Just to see if it's appearing */
+    border: 2px solid red; /* Temporary border to check visibility */
+}
+
