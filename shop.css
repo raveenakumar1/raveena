@@ -298,11 +298,15 @@ nav ul li a:hover {
 .shop-items img {
     width: 100%; 
     max-width: 250px; 
+    max-height: 250px;
+    min-width: 250px;
+    max-width: 250px;
     height: auto; 
     border-radius: 15px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
     transition: transform 0.3s ease-in-out; 
     margin: auto;
+    background-color: #fff;
     border: #1B0A0A 5px solid;
 }
 
