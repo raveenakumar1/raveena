@@ -12,7 +12,7 @@ body {
 #shop-screen {
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 30px;
 }
 
 /* side-bar */
@@ -103,6 +103,7 @@ body {
     padding: 3px; 
     box-sizing: border-box; 
     margin: 10px;
+    border: #1B0A0A 3px solid;
 }
 
 /* scrollbar thumb */
@@ -111,6 +112,7 @@ body {
     border-radius: 10px;
     width: 14px; 
     margin: 5px; 
+    border: #1B0A0A 3px solid;
 }
 
 /* filter container */
@@ -282,8 +284,7 @@ nav ul li a:hover {
     flex-wrap: wrap; 
     justify-content: center; 
     align-items: flex-start; 
-    gap: 30px; 
-    width: 64%;
+    gap: 20px; 
     min-height: 80vh;
     background-color: #934488;
     border-radius: 14px;
@@ -292,6 +293,7 @@ nav ul li a:hover {
     color: #fff;
     margin-top: 20px;
     margin-bottom: 50px;
+    margin-right: 50px;
     overflow-y: auto;
 }
 
@@ -358,16 +360,16 @@ nav ul li a:hover {
 
 /* scrollbar */
 .shop-items::-webkit-scrollbar {
-    width: 10px; 
+    width: 20px; 
 }
 
 /* scrollbar track */
 .shop-items::-webkit-scrollbar-track {
     background-color:#331212;
-    border-radius: 50px;
+    border-radius: 8px;
     padding: 3px; 
     box-sizing: border-box; 
-    margin: 1px;
+    border: #1B0A0A 3px solid;
 }
 
 /* scrollbar thumb */
@@ -376,4 +378,26 @@ nav ul li a:hover {
     border-radius: 10px;
     width: 15px; 
     margin: 5px; 
+    border: #1B0A0A 3px solid;
+}
+
+.shop-items:has(.shop-item:only-child) {
+    width: 800px; /* Set to your desired width */
+    margin: auto; /* Center it */
+}
+
+
+
+.tbc {
+    margin: 100px;
+    font-size: 15px;
+    padding: 10px 100px;
+    text-align: center;
+    border-radius: 30px; 
+    cursor: pointer; 
+    background-color: #1B0A0A;
+    color: #fff;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: #fff solid 5px;
 }

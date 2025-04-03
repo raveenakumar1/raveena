@@ -35,3 +35,17 @@ document.addEventListener("DOMContentLoaded", function () {
     //show all items when pages loads
     filterItems();
 });
+
+
+//for when there is only one item in the shop screen
+document.addEventListener("DOMContentLoaded", function () {
+    let shopItems = document.querySelector(".shop-items");
+    let items = shopItems.querySelectorAll(".shop-item");
+
+    if (items.length === 1) {
+        shopItems.style.width = "929px"; 
+        shopItems.style.margin = "auto"; 
+    } else {
+        shopItems.style.width = ""; // reset to default
+    }
+});
