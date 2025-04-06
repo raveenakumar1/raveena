@@ -1,8 +1,8 @@
 /* body */
 body {
     font-family: "Press Start 2P", system-ui;
-    height: 100vh; 
-    display: flex; 
+    min-height: 100vh; 
+    display: block; 
     margin: 0;
     padding-top: 8vw; 
     background-color: #ECCAE7;
@@ -291,10 +291,16 @@ body {
     right: 0;
 }
 
+.logo img{
+
+    width: clamp(20px, 10vh, 80px);
+    height: 100%;
+    margin: 0 auto;
+}
 
 .hamburger {
-    height: 50px;
-    width: 50px;
+    height: 100%;
+    width: clamp(10px, 10vh, 50px);
     position: relative;
     cursor: pointer;
     display: none; 
