@@ -18,18 +18,35 @@
     </div>
 
     <header>
-        <nav>
+        <nav class="not-off-screen-menu">
             <section class="logo">
                 <a href="https://raveenakumar1.github.io/raveena">
                     <img id="logo" src="https://raveenakumar1.github.io/raveena/images/logo.png" alt="Logo">
                 </a>
-
             </section>
-            <ul>
+            
+            <!--regular navigation for larger screens-->
+            <ul class="desktop-nav">
                 <li><a href="https://raveenakumar1.github.io/raveena/contact">contact</a></li>
                 <li><a href="https://raveenakumar1.github.io/raveena/shop">shop</a></li>
                 <li><a href="https://raveenakumar1.github.io/raveena/surprise">surprise?</a></li>                
             </ul>
+            
+            <!--hamburger menu for mobile-->
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <!--off-screen menu for mobile-->
+            <div class="off-screen-menu">
+                <ul>
+                    <li><a href="https://raveenakumar1.github.io/raveena/contact">contact</a></li>
+                    <li><a href="https://raveenakumar1.github.io/raveena/shop">shop</a></li>
+                    <li><a href="https://raveenakumar1.github.io/raveena/surprise">surprise?</a></li>                
+                </ul>
+            </div>
         </nav>
     </header>
 
@@ -38,6 +55,7 @@
         <p>welcome to raveena's shop! feel free to look around &lt;333</p>
         <a href="https://raveenakumar1.github.io/raveena/shop"><button class="start">start</button></a>
     </div>
+
 
     <script src="main.js"></script>
 </body>                                                                                                                                                                                                                                                                                                                                                                            

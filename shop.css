@@ -381,10 +381,6 @@ nav ul li a:hover {
     border: #1B0A0A 3px solid;
 }
 
-.shop-items:has(.shop-item:only-child) {
-    width: 800px; /* Set to your desired width */
-    margin: auto; /* Center it */
-}
 
 
 

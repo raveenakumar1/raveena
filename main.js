@@ -9,6 +9,17 @@ window.addEventListener("load", function () {
     }, 2000); // 2 seconds delay for animation effect
 });
 
+//hamburger menu
+document.addEventListener('DOMContentLoaded', function() {
+    const hamburger = document.querySelector('.hamburger');
+    const offScreenMenu = document.querySelector('.off-screen-menu');
+    
+    hamburger.addEventListener('click', function() {
+        this.classList.toggle('active');
+        offScreenMenu.classList.toggle('active');
+    }); 
+});
+
 
 //shop screen feeder
 var staticImg = document.getElementById('static');
