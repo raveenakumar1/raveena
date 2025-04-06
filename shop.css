@@ -31,6 +31,12 @@ body {
     }
 }
 
+@media (max-width: 580px) {
+    .shop-items {
+        max-width: 80vw;  
+    }
+}
+
 /* side-bar */
 .side-bar {
     display: flex;
@@ -110,7 +116,9 @@ body {
     margin-bottom: 10px;
 }
 
+
 /* scrollbar */
+
 .filter-menu::-webkit-scrollbar {
     width: 20px; 
 }
@@ -124,6 +132,8 @@ body {
     margin: 10px;
     border: #1B0A0A 3px solid;
 }
+
+
 
 /* scrollbar thumb */
 .filter-menu::-webkit-scrollbar-thumb {
@@ -469,6 +479,11 @@ body {
 
 
 /* scrollbar */
+
+.shop-items::-webkit-scrollbar-corner {
+    display: none;
+}
+
 .shop-items::-webkit-scrollbar {
     width: 20px; 
 }
