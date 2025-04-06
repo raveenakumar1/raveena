@@ -26,16 +26,6 @@ body {
         height: 100vh; 
         display: flex; 
         margin: 0;
-        padding-top: 8vw; 
-        background-color: #ECCAE7;
-    }
-}
-@media (max-width: 680px) {
-    body {
-        font-family: "Press Start 2P", system-ui;
-        height: 100vh; 
-        display: flex; 
-        margin: 0;
         padding-top: 12vh; 
         background-color: #ECCAE7;
     }
@@ -45,7 +35,7 @@ body {
 .side-bar {
     display: flex;
     flex-direction: column;
-    margin: 5vw;
+    margin: 3vw;
     gap: 20px;
 }
 
@@ -101,8 +91,8 @@ body {
     border-radius: 20px;
     position: static;
     left: 20px;
-    top: 100px;
     max-height: 80vh;
+    min-height: 35vh;
     overflow-y: auto; 
     box-sizing: border-box;
 }
