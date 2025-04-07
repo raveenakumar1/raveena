@@ -56,7 +56,7 @@ body{
     justify-content: flex-start;
     display: flex;
     flex-direction: column;
-    margin-top: -65px;
+    margin-top: -70px;
     gap: 8px;
 
 }
@@ -114,8 +114,8 @@ h2 {
 
 /* slides */
 .slide img {
-    width: clamp(240px, 50vw, 500px); 
-    height: clamp(200px, 30vw, 375px);
+    width: clamp(180px, 35vw, 360px); 
+    height: clamp(150px, 26vw, 300px);
     object-fit: cover;
     border-radius: 15px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
