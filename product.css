@@ -42,6 +42,10 @@ body{
         margin-top: 50px !important;
     }
 
+    .information {
+        margin: auto !important;
+    }
+
 }
 
 /* picture screen */
@@ -52,7 +56,7 @@ body{
     justify-content: flex-start;
     display: flex;
     flex-direction: column;
-    margin-top: -80px;
+    margin-top: -65px;
     gap: 8px;
 
 }
@@ -140,6 +144,7 @@ h2 {
     align-content: center;
     text-align: center;
     margin-top: -14px;
+    margin-left: -50px;
 
 }
 
