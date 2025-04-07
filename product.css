@@ -6,6 +6,7 @@ body{
     margin: 0; 
     padding-top: 80px;
     background-color: #1B0A0A;
+    border-bottom: #882d7c 10px solid;
 
 }
 
@@ -20,7 +21,7 @@ body{
 }
 
 /* smaller screens */
-@media (max-width: 1070px) {
+@media (max-width: 1300px) {
 
     body{
         font-family: "Press Start 2P", system-ui;
@@ -40,7 +41,7 @@ body{
         padding-bottom: 4%;
         margin-top: 50px !important;
     }
-    
+
 }
 
 /* picture screen */
@@ -52,19 +53,20 @@ body{
     display: flex;
     flex-direction: column;
     margin-top: -80px;
+    gap: 8px;
 
 }
 
 h1 {
     color: #fff;
-    font-size: clamp(16px, 10vw, 24px);
+    font-size: clamp(14px, 10vw, 20px);
     text-align: center;
 
 }
 
 h2 {
     color: #fff;
-    font-size: clamp(12px, 10vw, 20px) ;
+    font-size: clamp(8px, 10vw, 16px) ;
 }
 
 /* prev and next buttons */
@@ -137,6 +139,8 @@ h2 {
     justify-content: flex-start;
     align-content: center;
     text-align: center;
+    margin-top: -14px;
+
 }
 
 /* text box */
@@ -163,8 +167,10 @@ h2 {
 }
 
 .checkout-container img {
-    transform: scale(0.9);
+    transform: scale(0.7);
     width: clamp(60px, 10vw, 85px);
+    margin-top: -10px;
+
 }
 
 .checkout-container button {
@@ -209,13 +215,14 @@ h2 {
 
 .information #back-to-shop:hover {
     color: #e7b4e1;
-    font-size: 19px;
+    font-size: 14px;
 
 }
 
 /* navigation bar */
 .not-off-screen-menu {
     background-color: #331212;
+    border-bottom: #796161 4px dashed;
     padding: 0px 5vw;
     display: flex;
     justify-content: space-between;
@@ -228,7 +235,7 @@ h2 {
     right: 0;
     left: 0;
     z-index: 1000;
-    border-bottom: #753d6e solid 5px;
+
 }
 
 .not-off-screen-menu .desktop-nav {
@@ -244,10 +251,10 @@ h2 {
 
 .not-off-screen-menu .desktop-nav li a {
     text-decoration: none;
-    color: white;
-    background-color: #CE64C0;
+    color: rgb(255, 255, 255);
+    background-color: #7e2f73;
     border-radius: 30px;
-    border: 3px solid #fff;
+    border: 3px solid #b48e8e;
     font-weight: bold;
     font-size: clamp(12px, 2vw, 14px);
     padding: 1vw 1.5vw;
@@ -326,7 +333,7 @@ h2 {
 .hamburger span {
     height: 1.5vh;
     width: 100%;
-    background-color: #934488;
+    background-color: #ffffff;
     border-radius: 25px;
     position: absolute;
     top: 50%;
@@ -334,17 +341,7 @@ h2 {
     transform: translate(-50%, -50%);
     transition: .3s ease;
 }
-.hamburger span {
-    height: 1.5vh;
-    width: 100%;
-    background-color: #934488;
-    border-radius: 25px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: .3s ease;
-}
+
 
 .hamburger span:nth-child(1){
     top: 25%;
