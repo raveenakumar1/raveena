@@ -5,7 +5,7 @@ body {
     display: block; 
     margin: 0;
     padding-top: 8vw; 
-    background-color: #fcd8ee;
+    background-color: #ffe9f7;
     
 }
 
@@ -32,7 +32,7 @@ body {
     }
 
     .shop-items{
-        background-color: #693062;
+        background-color: #ac558a;
         border: #1B0A0A 6px solid;
         color: #fff !important;
     }
@@ -422,7 +422,6 @@ body {
     border-radius: 14px;
     padding: 20px;
     color: #934488;
-    margin-top: 2vw;
     margin-bottom: 2vw;
     margin-right: 2vw;
     margin-left: 2vw;
