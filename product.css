@@ -114,15 +114,15 @@ h2 {
 
 /* slides */
 .slide img {
-    width: clamp(180px, 35vw, 360px); 
-    height: clamp(150px, 26vw, 300px);
+    width: clamp(260px, 35vw, 360px);
+    aspect-ratio: 1.2;
     object-fit: cover;
     border-radius: 15px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
     transition: transform 0.3s ease-in-out; 
     margin: auto;
     background-color: #fff;
-    border: #F086E2 10px solid;
+    border: #96538d 10px solid;
 }
 
 .slideshow-container {

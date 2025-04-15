@@ -1,4 +1,22 @@
 
+const slides = document.querySelectorAll(".slide");
+let currentSlideIndex = 0;
+
+
+const urlParams = new URLSearchParams(window.location.search);
+const startId = urlParams.get("start");
+
+if (startId) {
+  slides.forEach((slide, index) => {
+    if (slide.id === startId) {
+      currentSlideIndex = index;
+    }
+  });
+}
+
+
+
+
 //slideshow for images
 let slideIndex = 1;
 showSlide(slideIndex);
@@ -22,3 +40,4 @@ function showSlide(n) {
   //shows correct slide
   slides[slideIndex - 1].style.display = "block";
 }
+
