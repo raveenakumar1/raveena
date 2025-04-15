@@ -2,12 +2,13 @@
 const slides = document.getElementsByClassName("slide");
 let slideIndex = 1;
 
-
+//checking for query in url
 const urlParams = new URLSearchParams(window.location.search);
 const startId = urlParams.get("start");
 
 if (startId) {
   for (let i = 0; i < slides.length; i++) {
+    //find the index of the slide with the matching id
     if (slides[i].id === startId) {
       slideIndex = i + 1;
     }
