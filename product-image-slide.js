@@ -1,24 +1,20 @@
 
-const slides = document.querySelectorAll(".slide");
-let currentSlideIndex = 0;
+const slides = document.getElementsByClassName("slide");
+let slideIndex = 1;
 
 
 const urlParams = new URLSearchParams(window.location.search);
 const startId = urlParams.get("start");
 
 if (startId) {
-  slides.forEach((slide, index) => {
-    if (slide.id === startId) {
-      currentSlideIndex = index;
+  for (let i = 0; i < slides.length; i++) {
+    if (slides[i].id === startId) {
+      slideIndex = i + 1;
     }
-  });
+  }
 }
 
-
-
-
 //slideshow for images
-let slideIndex = 1;
 showSlide(slideIndex);
 
 //when you click an arrow
